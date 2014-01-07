@@ -22,6 +22,8 @@
 		479AF8C7187A9347003C7C9D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479AF8AB187A9347003C7C9D /* CoreData.framework */; };
 		479AF8CF187A9347003C7C9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 479AF8CD187A9347003C7C9D /* InfoPlist.strings */; };
 		479AF8D1187A9347003C7C9D /* SuperDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 479AF8D0187A9347003C7C9D /* SuperDBTests.m */; };
+		479AF8DB187A93A8003C7C9D /* SuperDB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479AF8DA187A93A8003C7C9D /* SuperDB.storyboard */; };
+		479AF8DE187A9EEF003C7C9D /* BIDHeroListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479AF8DD187A9EEF003C7C9D /* BIDHeroListController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		479AF8CC187A9347003C7C9D /* SuperDBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperDBTests-Info.plist"; sourceTree = "<group>"; };
 		479AF8CE187A9347003C7C9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		479AF8D0187A9347003C7C9D /* SuperDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperDBTests.m; sourceTree = "<group>"; };
+		479AF8DA187A93A8003C7C9D /* SuperDB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SuperDB.storyboard; sourceTree = SOURCE_ROOT; };
+		479AF8DC187A9EEF003C7C9D /* BIDHeroListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDHeroListController.h; sourceTree = "<group>"; };
+		479AF8DD187A9EEF003C7C9D /* BIDHeroListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDHeroListController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +120,13 @@
 		479AF8AD187A9347003C7C9D /* SuperDB */ = {
 			isa = PBXGroup;
 			children = (
+				479AF8DA187A93A8003C7C9D /* SuperDB.storyboard */,
 				479AF8B6187A9347003C7C9D /* BIDAppDelegate.h */,
 				479AF8B7187A9347003C7C9D /* BIDAppDelegate.m */,
 				479AF8BC187A9347003C7C9D /* Images.xcassets */,
 				479AF8B9187A9347003C7C9D /* SuperDB.xcdatamodeld */,
+				479AF8DC187A9EEF003C7C9D /* BIDHeroListController.h */,
+				479AF8DD187A9EEF003C7C9D /* BIDHeroListController.m */,
 				479AF8AE187A9347003C7C9D /* Supporting Files */,
 			);
 			path = SuperDB;
@@ -229,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				479AF8DB187A93A8003C7C9D /* SuperDB.storyboard in Resources */,
 				479AF8B2187A9347003C7C9D /* InfoPlist.strings in Resources */,
 				479AF8BD187A9347003C7C9D /* Images.xcassets in Resources */,
 			);
@@ -252,6 +261,7 @@
 				479AF8BB187A9347003C7C9D /* SuperDB.xcdatamodeld in Sources */,
 				479AF8B8187A9347003C7C9D /* BIDAppDelegate.m in Sources */,
 				479AF8B4187A9347003C7C9D /* main.m in Sources */,
+				479AF8DE187A9EEF003C7C9D /* BIDHeroListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +383,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SuperDB/SuperDB-Prefix.pch";
 				INFOPLIST_FILE = "SuperDB/SuperDB-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -386,6 +397,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SuperDB/SuperDB-Prefix.pch";
 				INFOPLIST_FILE = "SuperDB/SuperDB-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
